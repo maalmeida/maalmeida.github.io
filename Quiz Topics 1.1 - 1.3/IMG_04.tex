@@ -1,0 +1,65 @@
+%\documentclass{article}
+\documentclass{standalone}
+\standaloneconfig{border=2mm 2mm 2mm 2mm}
+%\usepackage{geometry}
+\usepackage{pgfplots}
+\pgfplotsset{width=15cm, height=5cm,compat=1.9}
+%\pgfplotsset{compat=1.9}
+
+% We will externalize the figures
+%\usepgfplotslibrary{external}
+%\tikzexternalize
+
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[
+  axis lines=middle,
+  axis line style={thick,-stealth,shorten >=-3mm},
+  %axis lines = left,
+  width=8cm,
+  height=8cm,
+  %xlabel ={$x$}, 
+  %ylabel = {$y$},
+  xmin=-2.0, xmax=9.0,
+  ymin=-0.0, ymax=11.0,
+  xtick={-2.0,...,9.0},
+  ytick={0.0,...,11.0},
+  xmajorgrids=true, ymajorgrids=true,
+  minor grid style = {very thin, gray},
+  major grid style={solid, thin, gray},
+  xminorgrids=false, yminorgrids=false, minor tick num = 1,
+  %grid style = dashed,
+  minor x tick num = 9,
+  minor y tick num = 4,
+  %minor tick style = {thin, black},
+  major tick style = {thick, black},
+  minor tick style={draw=none},
+  xticklabel style={/pgf/number format/.cd, fixed relative, precision=4, /tikz/.cd},
+  yticklabel style={/pgf/number format/.cd,fixed relative,precision=3}]
+  %style="yticklabel style={
+  %/pgf/number format/precision=5,
+  %/pgf/number format/fixed}",
+  %scaled y ticks=false]
+
+%\addplot[color=red]{exp(x)};
+%\addplot[color=blue, samples=100]{x^2};ı
+
+%\addplot[color=purple, domain=-2.0:6.0, samples=1000, style=ultra thick]{3+2*(sin(deg(x*pi)))};
+%\addplot[color=blue, domain=-2.0:6.0, samples=1000, style=thick]{x^2};
+%\addplot[color=black,mark=*,style=thick,fill=white,only marks] coordinates {(0,0) (2,3)};
+
+% \addplot[color=blue, domain=-5.0:-2.0, samples=1000, style=ultra thick]{-1-x};
+% \addplot[color=blue,mark=*,style=thick,fill=blue,only marks] coordinates {(-5,4)(3,3)(3,1)(5,-2)};
+% \addplot[color=blue, domain=-2.0:-0.0, samples=1000, style=ultra thick]{3+x};
+% \addplot[color=blue, domain=0.0:3.0, samples=1000, style=ultra thick]{3};
+% \addplot[color=blue,mark=*,style=thick,fill=white,only marks] coordinates {(3,2)};
+% \addplot[color=blue, domain=3:5, style=ultra thick, samples=1000]{1-1.5*(x-3)};
+
+\addplot[color=blue, domain=-2.0:1.0, samples=1000, style=ultra thick]{6-2*x};
+\addplot[color=blue, domain=1.0:5.0, samples=1000, style=ultra thick]{4};
+\addplot[color=blue, domain=5.0:9.0, samples=1000, style=ultra thick]{4+0.5*(x-5)};
+\addplot[color=blue,mark=*,style=thick,fill=blue,only marks] coordinates {(-2,10)(9,6)};
+
+\end{axis}
+\end{tikzpicture}
+\end{document}
