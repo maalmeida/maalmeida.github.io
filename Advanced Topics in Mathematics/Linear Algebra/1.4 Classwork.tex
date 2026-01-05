@@ -1,0 +1,57 @@
+\documentclass[10pt]{article}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+\usepackage{siunitx}
+\usepackage{mathtools}
+\usepackage[version=4]{mhchem}
+\newcommand{\qtty}[2]{\left(\qty{#1}{#2}\right)}
+\sisetup{display-per-mode = symbol }
+\sisetup{inter-unit-product = \ensuremath { { } \cdot { } } }
+\usepackage[letterpaper, total={7in, 10in}]{geometry}
+\usepackage{graphicx} % Required for inserting images
+\renewcommand{\epsilon}{\varepsilon}
+
+
+\begin{document}
+\flushleft
+Name:\ \makebox[4in]{\hrulefill} \hspace{1in} Date:\ \makebox[1in]{\hrulefill}
+\begin{center}
+    \textbf{\S 1.4 The Matrix Equation $A\mathbf{x} = \mathbf{b}$}
+\end{center}
+
+\flushleft
+If $A$ is an $m \times n$ matrix, with columns $\mathbf{a}_1, \ldots, \mathbf{a}_n$, and if $\mathbf{x} \in \mathbb{R}^n$, then  \textbf{the product of $A$ and $\mathbf{x}$, denoted $A\mathbf{x}$}, is the \textbf{linear combination fo the columns of $A$ using the corresponding entries in $\mathbf{x}$ as weights}; that is,
+\begin{equation*}
+    A\mathbf{x}= \begin{bmatrix*}[r] \mathbf{a}_1 & \mathbf{a}_2 & \ldots & \mathbf{a}_n \end{bmatrix*} 
+    \begin{bmatrix*}[c]
+        x_1 \\ \vdots \\ x_n        
+    \end{bmatrix*}
+    = x_1 \mathbf{a}_1 + x_2 \mathbf{a}_2 + \ldots + x_n \mathbf{a}_n
+\end{equation*}
+
+\textbf{Multiply:}\
+\begin{flalign*}
+    \begin{bmatrix*}[r]
+    1 & 2 & -1 \\
+    0 & -5 & 3
+    \end{bmatrix*}
+    \begin{bmatrix*}[r] 4 \\ 3 \\ 7 \end{bmatrix*}
+\end{flalign*}
+
+\begin{flalign*}
+    \begin{bmatrix*}[r]
+    2 & -3 \\
+    8 & 0 \\
+    -5 & 2
+    \end{bmatrix*}
+    \begin{bmatrix*}[r] 4 \\ 7 \end{bmatrix*}
+\end{flalign*}
+
+========= \newline
+Determine if the following sets of vectors are linearly independent columns of the following matrices form a linearly independent set. Justify each answer.
+\[ \begin{bmatrix*}[r] 5 \\ 1 \\ 0 \end{bmatrix*}, 
+\begin{bmatrix*}[r] 7 \\ 2 \\ -6 \end{bmatrix*}, 
+\begin{bmatrix*}[r] -2 \\ -1 \\ 6 \end{bmatrix*} \]
+\end{document}
