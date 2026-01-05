@@ -3,7 +3,8 @@
 \usepackage{amsmath}
 \usepackage{etoolbox} %ref: https://tex.stackexchange.com/questions/161073/always-using-displaystyle-only-for-lim
 \usepackage{capt-of}
- \usepackage{color}
+\usepackage{color}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=red]{hyperref}
 
 \apptocmd{\lim}{\limits}{}{}
 
@@ -30,6 +31,7 @@
     \begin{solution}
         Consider the graph of $g(x)=1-x^2$. As $x\rightarrow 0, 1-x^2 \rightarrow 1$ \emph{from the left}.  Thus, we want the left-hand limit and $\lim_{x\rightarrow 0^-} f(x)=3$. \\
         Source: IPE 2016 Calculus BC \#88
+        \href{https://www.youtube.com/watch?v=H5PVBDLolIs}{bpr video}
     \end{solution}
 \end{questions}
 
