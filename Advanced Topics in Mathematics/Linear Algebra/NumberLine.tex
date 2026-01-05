@@ -1,0 +1,16 @@
+\documentclass[letterpaper]{article}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usetikzlibrary{arrows}
+\begin{document}
+\begin{tikzpicture}
+\draw[latex-latex] (-3.5,0) -- (3.5,0) ; %edit here for the axis
+\foreach \x in  {-3,-2,-1,0,1,2,3} % edit here for the vertical lines
+\draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt);
+\foreach \x in {-3,-2,-1,0,1,2,3} % edit here for the numbers
+\draw[shift={(\x,0)},color=black] (0pt,0pt) -- (0pt,-3pt) node[below] 
+{$\x$};
+\draw[*-o] (0.92,0) -- (2.08,0);
+\draw[very thick] (0.92,0) -- (1.92,0);
+\end{tikzpicture}
+\end{document}

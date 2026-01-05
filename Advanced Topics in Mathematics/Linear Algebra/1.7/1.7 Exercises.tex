@@ -1,0 +1,173 @@
+\documentclass[11pt,answers]{exam} %noanswers
+\usepackage{multicol}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+\usepackage{siunitx}
+\usepackage{mathtools}
+\usepackage[version=4]{mhchem}
+\newcommand{\qtty}[2]{\left(\qty{#1}{#2}\right)}
+\sisetup{display-per-mode = symbol }
+\sisetup{inter-unit-product = \ensuremath { { } \cdot { } } }
+\usepackage[letterpaper, total={7in, 10in}]{geometry}
+\usepackage{graphicx} % Required for inserting images
+\renewcommand{\epsilon}{\varepsilon}
+\renewcommand{\vec}[1]{\mathbf{#1}}
+\newcommand{\mat}[1]{\begin{bmatrix*}[r] #1 \end{bmatrix*}}
+
+\begin{document}
+\flushleft
+Name:\ \makebox[4in]{\hrulefill} \hspace{1in} Date:\ \makebox[1in]{\hrulefill}
+\begin{center}
+    \textbf{\S 1.7 Linear Independence}
+\end{center}
+
+
+\begin{questions}
+    \uplevel{Determine if the  vectors are linearly independent. Justify each answer.}
+    \vspace{0.25cm}
+    \begin{multicols}{4}
+        \question $ \displaystyle \smash{\begin{bmatrix*}[r] 5 \\ 1 \\ 0 \end{bmatrix*}, \begin{bmatrix*}[r] 7 \\ 2 \\ -6 \end{bmatrix*}, \begin{bmatrix*}[r] -2 \\ -1 \\ 6 \end{bmatrix*}} $
+        % \begin{solution}
+        %     fdsfds
+        % \end{solution}
+        \question $ \displaystyle \smash{\begin{bmatrix*}[r] 0 \\ 0 \\ 0 \end{bmatrix*}, \begin{bmatrix*}[r] 0 \\ 5 \\ -8 \end{bmatrix*}, \begin{bmatrix*}[r] -3 \\ 4 \\ 1 \end{bmatrix*}} $
+        % \begin{solution}
+        %     This should be <0,0,2> which makes it linearly independent. However, it's nice to have something with <0,0,0> which \emph{automatically} makes it linearly dependent since nv1+0v2+0v2 = 0 vector for any n
+        % \end{solution}
+        \question $ \displaystyle \smash{\begin{bmatrix*}[r] 1 \\ -3 \end{bmatrix*}, \begin{bmatrix*}[r] -3 \\ 6 \end{bmatrix*}} $
+        \question $ \displaystyle \smash{\begin{bmatrix*}[r] -1 \\ 4 \end{bmatrix*}, \begin{bmatrix*}[r] -2 \\ 8 \end{bmatrix*}}$
+    \end{multicols}
+
+    \uplevel{Determine if the columns of the matrix form a linearly independent set. Justify each answer}
+    \vspace{0.5cm}
+    \begin{multicols}{4}
+        \question $ \displaystyle  \smash{\begin{bmatrix*}[r] 0 & -8 & 5 \\ 3 & -7 & 4 \\ -1 & 5 & -4 \\ 1 & -3 & 2 \end{bmatrix*}} $ 
+        \newline \vspace{2.0cm} text
+        \question $ \displaystyle  \smash{\begin{bmatrix*}[r] -4 & -3 & 0 \\ 0 & -1 & 4 \\ 1 & 0 & 3 \\ 5 & 4 & 6 \end{bmatrix*}} $
+        \question $ \displaystyle  \smash{\begin{bmatrix*}[r] 1 & 4 & -3 & 0 \\ -2 & -7 & 5 & 1 \\ -4 & -5 & 7 & 5 \end{bmatrix*}} $
+        \question $ \displaystyle  \smash{\begin{bmatrix*}[r]1 & -3 & 3 & -2 \\ -3 & 7 & -1 & 2 \\ 0 & 1 & -4 & 3 \end{bmatrix*}} $
+    \end{multicols}
+    \vspace{0.5cm}
+    \begin{multicols}{4}
+        \rule{1cm}{0.15mm} \columnbreak \rule{1cm}{0.15mm} \columnbreak \rule{1cm}{0.15mm} \columnbreak \rule{1cm}{0.15mm}
+    \end{multicols}
+
+    \vspace{0.25cm}
+    \uplevel{(a) For what values of $h$ is $\vec{v}_3$ in $\textrm{Span}\{\vec{v}_1, \vec{v}_2\}$ (b) For what values of $h$ is $\{\vec{v}_2, \vec{v}_2, \vec{v}_3\}$ linearly \emph{dependent}? Justify each answer. }
+    \question $ \displaystyle \vec{v}_1 = \begin{bmatrix*}[r] 1 \\ -3 \\ 2 \end{bmatrix*}, \vec{v}_2 = \begin{bmatrix*}[r] -3 \\ 10 \\ -6 \end{bmatrix*}, \vec{v}_3 = \begin{bmatrix*}[r] 2 \\ -7 \\ h \end{bmatrix*}$
+    \question $ \displaystyle \vec{v}_1 = \begin{bmatrix*}[r] 1 \\ -5 \\ -3 \end{bmatrix*}, \vec{v}_2 = \begin{bmatrix*}[r] -2 \\ 10 \\ 6 \end{bmatrix*}, \vec{v}_3 = \begin{bmatrix*}[r] 2 \\ -10 \\ h \end{bmatrix*}$
+
+    \vspace{0.25cm}
+    \uplevel{Find the value(s) of $h$ for which the vectors are linearly \emph{dependent}. Justify each answer.}
+    \question $ \displaystyle \vec{v}_1 = \begin{bmatrix*}[r] 1 \\ -1 \\ 4 \end{bmatrix*}, \vec{v}_2 = \begin{bmatrix*}[r] 3 \\ -5 \\ 7 \end{bmatrix*}, \vec{v}_3 = \begin{bmatrix*}[r] -1 \\ 5 \\ h \end{bmatrix*}$
+    \question $ \displaystyle \vec{v}_1 = \begin{bmatrix*}[r] 2 \\ -4 \\ 1 \end{bmatrix*}, \vec{v}_2 = \begin{bmatrix*}[r] -6 \\ 7 \\ -3 \end{bmatrix*}, \vec{v}_3 = \begin{bmatrix*}[r]8 \\ h \\ 4 \end{bmatrix*}$
+    \question $ \displaystyle \vec{v}_1 = \begin{bmatrix*}[r] 1 \\ 5 \\ -3 \end{bmatrix*}, \vec{v}_2 = \begin{bmatrix*}[r] -2 \\ -9 \\ 6 \end{bmatrix*}, \vec{v}_3 = \begin{bmatrix*}[r] 3 \\ h \\ -9 \end{bmatrix*}$
+    \question $ \displaystyle \vec{v}_1 = \begin{bmatrix*}[r] 1 \\ -1 \\ 3 \end{bmatrix*}, \vec{v}_2 = \begin{bmatrix*}[r] -5 \\ 7 \\ 8 \end{bmatrix*}, \vec{v}_3 = \begin{bmatrix*}[r] 1 \\ 1 \\ h \end{bmatrix*}$
+
+    \uplevel{Determine by inspection whether the following sets of vectors are linearly \emph{independent}. Justify each answer.}
+    \begin{multicols}{2}
+        \question $\mat{ 5 \\ 1}, \mat{2 \\ 8}, \mat{1 \\ 3}, \mat{-1 \\ 7}$
+        \question $\mat{4 \\ -2 \\ 6}, \mat{6 \\ -3 \\ 9}$    
+        \question $\mat{3 \\ 5 \\ 1}, \mat{0 \\ 0 \\ 0}, \mat{-6 \\ 5 \\ 4}$
+        \question $\mat{4 \\ 4}, \mat{-1 \\ 3}, \mat{2 \\ 5}, \mat{8 \\ 1}$
+        \question $\mat{-8 \\ 12 \\ -4}, \mat{2 \\ -3 \\ -1}$
+        \question $\mat{1 \\ 4 \\ -7}, \mat{-2 \\ 5 \\ 3}, \mat{0 \\ 0 \\ 0}$
+    \end{multicols}
+    
+   
+
+    \uplevel{Mark each statement True or False (\textbf{T/F}). Justify each answer on the basis of a careful reading of the text.}
+    \question (\textbf{T/F}) The columns of a matrix $A$ are linearly independent if the equation $A\vec{x}=\vec{0}$ has the trivial solution.
+    \question (\textbf{T/F}) Two vectors are linearly independent if and only if they lie on a line through the origin.
+    \question (\textbf{T/F}) If $S$ is a linearly indpendent set, then each vector is a linear combination of the other vectors in $S$.
+    \question (\textbf{T/F}) If a set contains fewer vectors than there are entries in the vectors, then the set is linearly independent.
+    \question (\textbf{T/F}) The columns of any $4\times5$ matrix are linearly independent.
+    \question (\textbf{T/F}) If $\vec{x}$ and $\vec{y}$ are linearly independent, and if $\vec{z}$ is in $\textrm{Span}\{\vec{x}, \vec{y}\}$, then $\{ \vec{x}, \vec{y}, \vec{z} \}$ linearly dependent.
+    \question (\textbf{T/F}) If $\vec{x}$ and $\vec{y}$ are linearly independent and if $\{ \vec{x}, \vec{y}, \vec{z} \}$ is linearly dependent, then $\vec{z}$ is in $\textrm{Span}\{\vec{x},\vec{y}\}$.
+    \question (\textbf{T/F}) If a set in $\mathbb{R}^n$ is linearly independent, then the set contains more vectors than there are entires in each vector.
+
+    \uplevel{Describe the possible echelon forms of the matrix. Use the notation of Example 1 in Section 1.2.}
+    \question $A$ is a $3 \times 3$ matrix with linearly independent columns.
+    \question $A$ is a $2 \times 2$ matrix with linearly dependent columns.
+    \question $A$ is a $4 \times 2$ matrix, $A = \mat{ \vec{a}_1 & \vec{a}_2 }$, and $\vec{a}_2$ is a not a multiple of $\vec{a}_1$. 
+    \question $A$ is a $4 \times 3$ matrix, $A = \mat{ \vec{a}_1 & \vec{a}_2 & \vec{v}_3}$ such that $\{ \vec{a}_1, \vec{a}_2\}$ is linearly independent and $\vec{a}_3$ is not in $\textrm{Span}\{\vec{a}_1, \vec{a}_2 \}$
+
+    \vspace{0.25cm}
+    \question How many pivot columns must a $7 \times 5$ matrix have if its columns are linearly independent? Why?
+    \question How many pivot columns must a $5 \times 7$ matrix have if its columns span $\mathbb{R^5}$? Why?
+    \question Construct $3 \times 2$ matrices $A$ and $B$ such that $A\vec{x}=\vec{0}$ has only the trivial solution and $B\vec{x}=\vec{0}$ has a nontrivial solution.
+    \question
+    \begin{parts}
+        \part Fill in the blank in the following statement: ``If $A$ is an $m \times n$ matrix, then the columns of $A$ are linearly independent if and only if $A$ has \rule{1cm}{0.15mm} pivot columns."
+        \part Explain why the statement in (a) is true.
+    \end{parts}
+
+    \vspace{5 cm}
+    \uplevel{The following exercises should be  solved \emph{without performing row operations}.}
+    \question Given $A = \mat{2 & 3 & 5 \\ -5 & 1 & -4 \\ -3 & -1 & -4 \\ 1 & 0 & 1}$, observe that the third column is the sum of the first two columns. Find a nontrivial solution to $A\vec{x}=\vec{0}$.
+    \question Given $A = \mat{4 & 1 & 6 \\ -7 & 5 &  3 \\ 9 & -3 & 3}$, observe that the first column plus twice the second column equals the third column. Find a nontrivial solution of $A\vec{x}=\vec{0}$.
+    \question this is a question
+    \begin{solution} Questions \ref{question@1}
+        This is the solution to question 1
+    \end{solution}
+    \begin{solution} Question \ref{question@2}
+        This is the solution to question 2
+    \end{solution}
+    \question $f_x$
+\end{questions}
+
+\flushleft
+\newpage
+Describe the possible echelon forms of the matrix. Use the notation of Example 1 in 
+
+\[
+\begin{bmatrix} 5 \\ 1 \\ 0 \end{bmatrix}
+\begin{bmatrix} 7 \\ 2 \\ -6 \end{bmatrix}, 
+\begin{bmatrix} -2 \\ -1 \\ 6 \end{bmatrix}
+\]
+
+\[
+\begin{bmatrix} 0 \\ 0 \\ 2 \end{bmatrix}
+\begin{bmatrix} 0 \\ 5 \\ -8 \end{bmatrix}, 
+\begin{bmatrix} -3 \\ 4 \\ 1 \end{bmatrix}
+\]
+
+
+\begin{equation*}
+    A\mathbf{x}= \begin{bmatrix*}[r] \mathbf{a}_1 & \mathbf{a}_2 & \ldots & \mathbf{a}_n \end{bmatrix*} 
+    \begin{bmatrix*}[c]
+        x_1 \\ \vdots \\ x_n        
+    \end{bmatrix*}
+    = x_1 \mathbf{a}_1 + x_2 \mathbf{a}_2 + \ldots + x_n \mathbf{a}_n
+\end{equation*}
+
+\textbf{Multiply:}\
+\begin{flalign*}
+    \begin{bmatrix*}[r]
+    1 & 2 & -1 \\
+    0 & -5 & 3
+    \end{bmatrix*}
+    \begin{bmatrix*}[r] 4 \\ 3 \\ 7 \end{bmatrix*}
+\end{flalign*}
+
+\begin{flalign*}
+    \begin{bmatrix*}[r]
+    2 & -3 \\
+    8 & 0 \\
+    -5 & 2
+    \end{bmatrix*}
+    \begin{bmatrix*}[r] 4 \\ 7 \end{bmatrix*}
+\end{flalign*}
+
+========= \newpage
+Determine if the following sets of vectors are linearly independent columns of the following matrices form a linearly independent set. Justify each answer.
+\[ \begin{bmatrix*}[r] 5 \\ 1 \\ 0 \end{bmatrix*}, 
+\begin{bmatrix*}[r] 7 \\ 2 \\ -6 \end{bmatrix*}, 
+\begin{bmatrix*}[r] -2 \\ -1 \\ 6 \end{bmatrix*} \]
+
+
+
+
+\end{document}
