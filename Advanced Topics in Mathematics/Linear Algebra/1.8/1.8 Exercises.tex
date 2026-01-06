@@ -66,10 +66,12 @@ Name:\ \makebox[4in]{\hrulefill} \hspace{1in} Date:\ \makebox[1in]{\hrulefill}
         \end{figure}
     
     \question Let $T : \mathbb{R}^2 \rightarrow \mathbb{R}^2$ be a linear transformation that maps $\vec{u} = \mat{5 \\ 2}$ into $\mat{2 \\ 1}$ and maps $\vec{v} = \mat{1 \\ 3}$ into $\mat{-1 & 3}$. Use the fact that $T$ is a \emph{linear} transformation to find the images under $T$ of $3\vec{u}$, $2\vec{v}$, and $3\vec{u}+2\vec{v}$.
-    \question insert
+    \question The figure shows vectors $\vec{u}$ , $\vec{v}$, and $\vec{w}$, along with the images $T(\vec{u})$ and $T(\vec{v})$ under the action of a linear transformation $T:\mathbb{R}^2 \rightarrow \mathbb{R}^2$. Copy this figure carefully, and draw the image $T(\vec{w})$ as accurately as possible. \emph{Hint:} First, write $\vec{w}$ as a linear combination of $\vec{u}$ and $\vec{v}$.
+    \begin{figure}[H]
+        \includegraphics[width=8cm]{SCR-20260105-lada.png}
+    \end{figure}
     \question Let $\vec{e}_1 = \mat{1\\0}, \vec{e}_2 = \mat{0\\1}, \vec{y}_1=\mat{2\\5}, \vec{y}_2=\mat{-1\\6}$, and let $T:\mathbb{R}^2\rightarrow\mathbb{R}^2$ be a linear transformation that maps $\vec{e}_1$ into $\vec{y}_1$ and maps $\vec{e}_2$ into $\vec{y}_2$. Find the images of $\mat{5\\-4}$ and $\mat{x_1 \\ x_2}$.
     \question Let $\vec{x} = \mat{x_1 \\ x_2}, \vec{v}_1 = \mat{-2 \\ 5}, \vec{v}_2 = \mat{7\\-3}$, and let $T:\mathbb{R}^2\rightarrow \mathbb{R}^2$ be a linear transformation that maps $\vec{x}$ into $x_1\vec{v}_1+x_2\vec{x}_2$. Find a matrix $A$ such that $T(\vec{x})$ is $A\vec{x}$ for each $\vec{x}$.
-
     \begin{center}\rule{4in}{0.1mm}\end{center}
     \uplevel{Mark each statement True or False (\textbf{T}/\textbf{F}). Justify each answer.}
     \question (\textbf{T}/\textbf{F}) A linear transformation is a special type of function.
@@ -82,12 +84,31 @@ Name:\ \makebox[4in]{\hrulefill} \hspace{1in} Date:\ \makebox[1in]{\hrulefill}
     \question (\textbf{T}/\textbf{F}) A linear transformation preserves the operations of vector addition and scalar multiplication.
     \question (\textbf{T}/\textbf{F}) A transformation $T$ is linear if and only if $T\left(c_1\vec{v}_1 + c_2\vec{v}_2\right) = c_1 T(\vec{v}_1) + c_2 T(\vec{v}_2)$ for all $\vec{v}_1$ and $\vec{v}_2$ in the domain of $T$ and for all scalars $c_1$ and $c_2$.
     \question (\textbf{T}/\textbf{F}) The superposition principle is a physical description of a linear transformation.
-    \question (\textbf{T}/\textbf{F}) Let $T : \mathbb{R}^2 \rightarrow \mathbb{R}^2$ be the linear transformation that reflecs each point through the $x_1$-axis. (See Practice Problem 2.). Make two sketches similar to Figure 6 that illustrates properties (i) and (ii) of a linear transformation.
-    \question (\textbf{T}/\textbf{F}) Suppose vectors $\vec{v}_1, \ldots, \vec{v}_p$ span $\mathbb{R}^n$, and let $T : \mathbb{R}^n \rightarrow \mathbb{R}^n$ be a linear transformation. Suppose $T(\vec{v}_i) = \vec{0}$ for $i=1,\ldots,p$. Show that $T$ is a zero transformation. That is, show that if $\vec{x}$ is any vector in $\mathbb{R}^n$, then $T(\vec{x}) = \vec{0}$.
-    \question (\textbf{T}/\textbf{F}) Given $\vec{v}\neq\vec{0}$ and $\vec{p}$ in $\mathbb{R}^n$, the line through $\vec{p}$ in the directin of $\vec{v}$ has the parametric equation $\vec{x}=\vec{p}+t\vec{v}$. Show that a linear transformation $T:\mathbb{R}^n\rightarrow\mathbb{R}^n$ maps this line onto another line or onto a single point (a \emph{degenerate line}).
-    \question (\textbf{T}/\textbf{F}) Let $\vec{u}$ and $\vec{v}$ be linearly independent vectors in $\mathbb{R}^3$, and let $P$ be the plane through $\vec{u}$, $\vec{v}$, and $\vec{0}$. The parametric equation of $P$ is $\vec{x}=s\vec{u}+t\vec{v}$ (with $s$, $t$ in $\mathbb{R}$). Show that a linear transformation $T:\mathbb{R}^3 \rightarrow \mathbb{R}^3$ maps $P$ onto a plane through $\vec{0}$, or onto a line through $\vec{0}$, or onto just the origin in $\mathbb{R}^3$. What must be true about $T(\vec{u})$ and $T(\vec{v})$ in order fo rthe image of the plane $P$ to be a plane?
-    \question (\textbf{T}/\textbf{F}) 
-   
-    
-\end{questions}
+    \question Let $T : \mathbb{R}^2 \rightarrow \mathbb{R}^2$ be the linear transformation that reflecs each point through the $x_1$-axis. (See Practice Problem 2.). Make two sketches similar to Figure 6 that illustrates properties (i) and (ii) of a linear transformation.
+    \question Suppose vectors $\vec{v}_1, \ldots, \vec{v}_p$ span $\mathbb{R}^n$, and let $T : \mathbb{R}^n \rightarrow \mathbb{R}^n$ be a linear transformation. Suppose $T(\vec{v}_i) = \vec{0}$ for $i=1,\ldots,p$. Show that $T$ is a zero transformation. That is, show that if $\vec{x}$ is any vector in $\mathbb{R}^n$, then $T(\vec{x}) = \vec{0}$.
+    \question Given $\vec{v}\neq\vec{0}$ and $\vec{p}$ in $\mathbb{R}^n$, the line through $\vec{p}$ in the directin of $\vec{v}$ has the parametric equation $\vec{x}=\vec{p}+t\vec{v}$. Show that a linear transformation $T:\mathbb{R}^n\rightarrow\mathbb{R}^n$ maps this line onto another line or onto a single point (a \emph{degenerate line}).
+    \question Let $\vec{u}$ and $\vec{v}$ be linearly independent vectors in $\mathbb{R}^3$, and let $P$ be the plane through $\vec{u}$, $\vec{v}$, and $\vec{0}$. The parametric equation of $P$ is $\vec{x}=s\vec{u}+t\vec{v}$ (with $s$, $t$ in $\mathbb{R}$). Show that a linear transformation $T:\mathbb{R}^3 \rightarrow \mathbb{R}^3$ maps $P$ onto a plane through $\vec{0}$, or onto a line through $\vec{0}$, or onto just the origin in $\mathbb{R}^3$. What must be true about $T(\vec{u})$ and $T(\vec{v})$ in order fo rthe image of the plane $P$ to be a plane?
+    \question \begin{parts}
+        \part Show that the line through vectors $\vec{p}$ to $\vec{q}$ in $\mathbb{R}^n$ may be writte in the parametric form $\vec{x} = (1-t)\vec{p} + t\vec{q}$.
+        \part The line spegment from $\vec{p}$ to $\vec{q}$ is the set of points of the form $(1-t)\vec{p}+t\vec{q}$ for $0\leq t \leq 1$ (as shown in the figure below). Show that the linear transformation $T$ maps this line segment onto a line segment or onto a single point.
+        \begin{figure}[H]
+            \includegraphics[width=5cm]{SCR-20260104-uasc.png}
+        \end{figure}
+    \end{parts}
+    \question Let $\vec{u}$ and $\vec{v}$ be vectors in $\mathbb{R}^n$. It can be shown that thet set $P$ of all points in the parallelogram determined by $\vec{u}$ and $\vec{v}$ has the form $a\vec{u}+b\vec{v}$, for $0 \leq q \leq 1$, $0 \leq b \leq 1$.  Let $T \, : \, \mathbb{R}^n \rightarrow \mathbb{R}^m$ be a linear transformation. Explain why the image of a point in $P$ under the transformation $T$ lies in the parallelogram determined by $T(\vec{u})$ and $T(\vec{v})$.
+    \question Define $f : \mathbb{R} \rightarrow \mathbb{R}$ by $f(x) = mx+b$.
+        \begin{parts}
+            \part Show that $f$ is a linear transformation when $b=0$.
+            \part Find a property of a linear transformation that is violated when $b\neq0$.
+            \part Why is $f$ called a linear function?
+        \end{parts}
+    \question An \emph{affine transformation} $T:\mathbb{R}^n \rightarrow \mathbb{R}^m$ has the form $T(x)=A\vec{x}+\vec{b}$, with $A$ an $m\times n$ matrix and $\vec{b}$ in $\mathbb{R}^m$. Show that $T$ is \emph{not} a linear transformation when $b\neq0$. (Affine transformations are important in computer graphics.)
+    \question Let $T:\mathbb{R}^n \rightarrow \mathbb{R}^m$  by a linear transformation, and let $\{ \vec{v}_1, \vec{v}_2, \vec{v}_3 \}$ be a linearly dependent set in $\mathbb{R}^n$. Explain why the set $\{ T(\vec{v}_1), T(\vec{v}_2), T(\vec{v}_3) \}$ is linearly dependent.
+    \uplevel{In Excercises 40-44, column vectors are written as rows, such as $\vec{v}=(x_1, v_2)$, and $T(\vec{x})$ is written as $T(x_1, x_2)$.}
+    \question Show that the transformation $T$ defined by $T(x_1,x_2) = (4x_1-2x_2, 3|x_2|)$ is not linear.
+    \question Show that the transformation $T$ defined by $T(x_1,x_2) = (2x_1-3x_2, x_1+4,5x_2)$ is not linear.
+    \question Let $T: \ mathbb{R}^n \rightarrow \mathbb{R}^m$ be a linear transformation. Show that if $T$ maps two linearly independent vetors onto a linearly dependent set, then the equation $T(\vec{x}) = \vec{0}$ has a nontrivial solution. \emph{Hint:} Suppose $\vec{u}$ and $\vec{v}$ in $\mathbb{R}^n$ are linearly independent and yet $T(\vec{u})$ and $T(\vec{v})$ are linearly depndent. Then $c_1 T(\vec{u}) + c_2 T(\vec{v}) = \vec{0}$ for some weights $c_1$ and $c_2$,  not both zero. Use this equation.
+    \question Let $T : \mathbb{R}^3 \rightarrow \mathbb{R}^3$ be the transformation that reflects each vector $\vec{x} = (x_1, x_2, x_3)$ through the plane $x_3 = 0$ onto $T(\vec{x}) = (x_1, x_2, -x_3)$. Show that $T$ is a linear transformation.
+    \question Let $T : \mathbb{R}^3 \rightarrow \mathbb{R}^3$ be the transformation that projects each vector $\vec{x}=(x_1,x_2,x_3)$ onto the plane $x_2=0$, so $T(\vec{x}) = (x_1, 0, x_3)$. Show that $T$ is a linear transformation.
+\end{questions} 
 \end{document}

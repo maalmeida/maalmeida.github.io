@@ -527,6 +527,16 @@ INPUT ./blank6x6.pdf
 INPUT blank6x6.pdf
 INPUT ./blank6x6.pdf
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
+INPUT ./SCR-20260105-lada.png
+INPUT ./SCR-20260105-lada.png
+INPUT SCR-20260105-lada.png
+INPUT ./SCR-20260105-lada.png
+INPUT ./SCR-20260105-lada.png
+INPUT ./SCR-20260104-uasc.png
+INPUT ./SCR-20260104-uasc.png
+INPUT SCR-20260104-uasc.png
+INPUT ./SCR-20260104-uasc.png
+INPUT ./SCR-20260104-uasc.png
 INPUT 1.8 Exercises.aux
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
