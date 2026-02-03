@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1764949086 "/Users/marcoalmeida/Documents/GitHub/maalmeida.github.io/Advanced Topics in Mathematics/Linear Algebra/1.4 Classwork.tex" "1.4 Classwork.pdf" "1.4 Classwork" 1764949087 0
-  "/Users/marcoalmeida/Documents/GitHub/maalmeida.github.io/Advanced Topics in Mathematics/Linear Algebra/1.4 Classwork.tex" 1764949086 2092 126cf92ff3590ed144c4ab2a10b310fa ""
+["pdflatex"] 1768393661 "/Users/marcoalmeida/Documents/GitHub/maalmeida.github.io/Advanced Topics in Mathematics/Linear Algebra/1.4/1.4 Classwork.tex" "1.4 Classwork.pdf" "1.4 Classwork" 1768393662 0
+  "/Users/marcoalmeida/Documents/GitHub/maalmeida.github.io/Advanced Topics in Mathematics/Linear Algebra/1.4/1.4 Classwork.tex" 1768393660 2092 67658bbcbd7c4e1ea7c8f37297e0c1e7 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcbx1000.tfm" 1136768653 1536 30fde759286ded71559881bfa2623939 ""
@@ -71,8 +71,8 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1680896342 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1680896332 7883464 93397beb92c0932719de6622eff537a4 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "1.4 Classwork.aux" 1764949087 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "1.4 Classwork.tex" 1764949086 2092 126cf92ff3590ed144c4ab2a10b310fa ""
+  "1.4 Classwork.aux" 1768393662 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "1.4 Classwork.tex" 1768393660 2092 67658bbcbd7c4e1ea7c8f37297e0c1e7 ""
   (generated)
   "1.4 Classwork.aux"
   "1.4 Classwork.log"

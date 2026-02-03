@@ -1,0 +1,92 @@
+\documentclass[11pt,answers]{exam} %noanswers
+\usepackage{multicol}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+\usepackage{siunitx}
+\usepackage{mathtools}
+\usepackage{float}
+\usepackage[version=4]{mhchem}
+\newcommand{\qtty}[2]{\left(\qty{#1}{#2}\right)}
+\sisetup{display-per-mode = symbol }
+\sisetup{inter-unit-product = \ensuremath { { } \cdot { } } }
+\usepackage[letterpaper, total={7in, 10in}]{geometry}
+\usepackage{graphicx} % Required for inserting images
+\renewcommand{\epsilon}{\varepsilon}
+\renewcommand{\vec}[1]{\mathbf{#1}}
+\newcommand{\mat}[1]{\begin{bmatrix*}[r] #1 \end{bmatrix*}}
+
+\begin{document}
+\flushleft
+Name:\ \makebox[4in]{\hrulefill} \hspace{1in} Date:\ \makebox[1in]{\hrulefill}
+\begin{center}
+    \textbf{\S 2.2 The Inverse of a Matrix}
+\end{center}
+
+
+\begin{questions}
+    \uplevel{Find the inverses of the matrices in Exercises 1 - 4. Then, vertify your proposed inverse.}
+    \question $\mat{8 & 3 \\ 5 & 2}$
+    \question $\mat{3 & 1 \\ 7 & 2}$
+    \question $\mat{8 & 3 \\ -7 & -3}$
+    \question $\mat{3 & -2 \\ 7 & -4}$
+    \question Skip
+    \question Skip
+    \question Use the inverse found in Exercise 1 to solve the system
+    \begin{eqnarray*}
+        8x_1 + 3x_2 &= 2 \\
+        5x_1 + 2x_2 &= -1
+    \end{eqnarray*}
+        \question Use the inverse found in Exercise 2 to solve the system
+    \begin{eqnarray*}
+        3x_1 + x_2 &= -2 \\
+        7x_1 + 2x_2 &= 3
+    \end{eqnarray*}
+    \question Let $A = \mat{1 & 2 \\ 5 & 12}$, \hspace{1cm} $\vec{b}_1 = \mat{-1 \\ 3}$, \hspace{1cm} $\vec{b_2} = \mat{1 \\ -5}$, $\vec{b_3} = \mat{2 \\ 6}$, and $\vec{b}_4 = \mat{3 \\ 5}$.
+    \begin{parts}
+        \part Find $A^{-1}$, and use it to solve the four equations $A\vec{x} = b_i$ for $i=1\ldots 4$.
+        \part The four equations in part (a) can be solved by the same set of row operations, since the coefficient mtrix is the same in each case. Solve the four equations in part (a) by row reducing the augmented matrix $A = \mat{A & \vec{b}_1 & \vec{b}_2 & \vec{b}_3 & \vec{b}_4}$.
+    \end{parts}
+    \question Use matrix algebra to show that if $A$ is invertible and $D$ satisfies $AD = I$, then $A D = A^{-1}$.
+    \uplevel{In Exercises 11-20, mark each statement True or False (\textbf{T}/\textbf{F}). Justify each answer.}
+    \question (\textbf{T}/\textbf{F}) In order for a matrix $B$ to be the inverse of $A$, btoh equations $AB = I$ and $BA = I$ must be true.
+    \question (\textbf{T}/\textbf{F}) The product of invertible $n \times n$ matrices is invertible, and the inverse of the product is the product of their inverses in the same order.
+    \question (\textbf{T}/\textbf{F}) If $A$ and $B$ are $n \times n$ matrices and invertible, then $A^{-1}B^{-1}$ is the inverse of $AB$.
+    \question (\textbf{T}/\textbf{F}) If $A$ is invertible then the inverse of $A^{-1}$ is $A$ itself.
+    \question (\textbf{T}/\textbf{F}) If $A = \mat{a & b \\ c & d}$ and $ab-cd \neq 0$, then $A$ is invertible.
+    \question (\textbf{T}/\textbf{F}) If $A = \mat{a & b \\ c & d}$ and $ab=cd$, then $A$ is not invertible.
+    \question (\textbf{T}/\textbf{F}) If $A$ is an invertible $n \times n$ matrix, then the equation $A\vec{x} = \vec{b}$ is consistent for \emph{each} $\vec{b}$ in $\mathbb{R}^n$.
+    \question (\textbf{T}/\textbf{F}) If $A$ can be row reduced to the identity matrix, then $A$ must be invertible.
+    \question (\textbf{T}/\textbf{F}) Each elementary matrix is invertible.
+    \question (\textbf{T}/\textbf{F}) If $A$ is invertible, then the elementary row operations that reduce $A$ to $I_n$ also reduce $A^{-1}$ to $I_n$.
+    \question (\textbf{T}/\textbf{F}) Let $A$ be an invertible $n \times n$ matrix, and let $B$ be an $n \times p$ matrix. Show that the equation $AX = B$ has a unique solution $A^{-1} B$.
+    \vspace{1cm}
+    \question Let $A$ be an invertible $n times n$ matrix, and let $B$ be an $n \times p$ matrix. Explain why $A^{-1}B$ can be computed by row reduction:
+    \begin{center} If $\mat{A & B} \sim \ldots \sim \mat{I & X}$, then $X = A^{-1}B$.\end{center}
+    If $A$ is larger than $2 \times 2$, then row reduction of $\mat{A & B}$ is much faster than computing $A^{-1}$ and $A^{-1}B$.
+    \question Suppose $AB = AC$ where $B$ and $C$ are $n \times p$ matrices and $A$ is invertible. Show that $B = C$. If this true, in general, when $A$ is not invertible?
+    \question Suppose $\left(B-C\right)D = 0$ where $B$ and $C$ are $m \times n$ matrices and $D$ is invertible. Show that $B = C$.
+    \question Suppose $A$, $B$, and $C$ are $n \times n$ matrices. Show that $ABC$ is also invertible by producing a matrix $D$ such that $(ABC)D = I$ and $D(ABC) = I$.
+    \question Suppose $A$ and $B$ are $n \times n$ matrices, $B$ is invertible, and $AB$ is invertible. Show that $A$ is invertible. Hint: Let $C = AB$, and solve this equation for $A$.
+    \question Solve the equation $AB = BC$ for $A$, assuming that $A$, $B$, and $C$ are square and $B$ is invertible.
+    \question Suppose $P$ is invertible and $A = PBP^{-1}$. Solve for $B$ in terms of $A$.
+    \question If $A$, $B$, and $C$ are $n \times n$ invertible matrices, does the equation $C^{-1}(A+X)B^{[1]} = I_n$ have a solution, $X$? If so, find it.
+    \question Suppose $A$, $B$, and $X$ are $n \times n$ matrices with $A$, $X$, and $A-AX$ invertible, and suppose
+    \begin{equation*}
+        \left(A - AX\right)^{-1} = X^{-1}B
+    \end{equation*}
+    \begin{parts}
+        \part Explain why $B$ is invertible.
+        \part Solve the above equation for $X$. If you need to invert a matrix, explain why that matrix is invertible.
+    \end{parts}
+    \question Explain why the columns of an $n \times n$ matrix $A$ are linearly independent when $A$ is invertible.
+    \question Explain why the columns of an $n \times n$ matrix $A$ span $\mathbb{R}^n$ when $A$ is invertible.
+    
+
+    %=============
+    \begin{center}\rule{4in}{0.1mm}\end{center}
+
+
+\end{questions} 
+\end{document}

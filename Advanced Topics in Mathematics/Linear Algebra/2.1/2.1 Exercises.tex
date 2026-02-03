@@ -1,0 +1,73 @@
+\documentclass[11pt,answers]{exam} %noanswers
+\usepackage{multicol}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+\usepackage{siunitx}
+\usepackage{mathtools}
+\usepackage{float}
+\usepackage[version=4]{mhchem}
+\newcommand{\qtty}[2]{\left(\qty{#1}{#2}\right)}
+\sisetup{display-per-mode = symbol }
+\sisetup{inter-unit-product = \ensuremath { { } \cdot { } } }
+\usepackage[letterpaper, total={7in, 10in}]{geometry}
+\usepackage{graphicx} % Required for inserting images
+\renewcommand{\epsilon}{\varepsilon}
+\renewcommand{\vec}[1]{\mathbf{#1}}
+\newcommand{\mat}[1]{\begin{bmatrix*}[r] #1 \end{bmatrix*}}
+
+\begin{document}
+\flushleft
+Name:\ \makebox[4in]{\hrulefill} \hspace{1in} Date:\ \makebox[1in]{\hrulefill}
+\begin{center}
+    \textbf{\S 2.1 Matrix Operations}
+\end{center}
+
+
+\begin{questions}
+    \uplevel{In Exercises 1 and 2, compute each matrix sum or product if it is defined. If an expression is undefined, explain why. Let
+    \begin{equation*}
+        A = \mat{2 & 0 & -1 \\ 4 & -3 & 2} \hspace{1cm} B = \mat{7 & -5 & 1 \\ 1 & -4 & -3} \hspace{1cm}
+        C = \mat{1 & 2 \\ -2 & 1} \hspace{1cm} D = \mat{3 & 5 \\ -1 & 4} \hspace{1cm} E = \mat{-5 \ 3}
+    \end{equation*}}
+    \question $-2A, B - 2A, AC, CD$
+    \question $A+2B, 3C-E, CB, EB$
+    \uplevel{In the rest of this exercise set and those that follow, you should assume that each matrix expression is defined. That is, the sizes of the matrices (and vectors) involved ``match" appropriately.}
+    \question Let $A = \mat{4 & -1 \\ 5 & -2}$. Compute $3I_2 - A$ and $(3I_2)A$.
+    \question Compute $A-5I_3$ and $(5I_3)A$, when $A = \mat{9 & -1 & 3 \\ -8 & 7 & -3 \\ -4 & 1 & 8}$
+    \uplevel{In Exercises 5 and 6, compute the product $AB$ in two ways: (a) by the definition, where $A\vec{b}_1$ and $A\vec{b}_2$ are computed separately, and (b) by the row-column rule for computing AB.}
+    \question $A = \mat{-1 & 2 \\ 5 & 4 \\ 2 & -3}, \hspace{2 mm} B = \mat{3 & -4 \\ -2 & 1}$
+    \question $A = \mat{4 & -2 \\ -3 & 0 \\ 3 & 5}, \hspace{2mm} B = \mat{1 & 3 \\ 4 & -1}$
+    \question If a matrix $A$ is $5 \times 3$ and the product $AB$ is $5 \times 7$, what is the size of $B$?
+    \question How many rows does $B$ have if $BC$ is a $3 \times 4$ matrix?
+    \question Let $A = \mat{3 & 4 \\ -2 & 1}, \hspace{2mm} B=\mat{5 & -6 \\ 3 & k}$. What value(s) of $k$, if any, will make $AB = BA$?
+    \question Let $A = \mat{3 & -6 \\ -4 & 8}, \hspace{2mm} B=\mat{8 & 6 \\ 5 & 7}, \hspace{2mm} C = \mat{6 & -2 \\ 4 & 3}$. Verify that $AB = AC$ and yet $B \neq C$.
+    \question Let $A = \mat{1 & 1 & 1 \\ 1 & 2 & 3 \\ 1 & 4 & 5}$ and $D = \mat{2 & 0 & 0 \\ 0 & 3 & 0 \\ 0 & 0 & 5}$. Compute $AD$ and $BA$. Explain how the columns or rows of $A$ change when $A$ is multiplied by $D$ on the right or on the left. Find a $3 \times 3$ matrix $B$, not the identity matrix or the matrix matrix, such that $AB = BA$.
+    \question Let $A = \mat{2 & -8 \\ -1 & 4}$. Construct a $2 \times 2$ matrix $B$ such that $AB$ is the zero matrix. Use two different nonzero columns for $B$.
+    \question Let $\vec{r}_1, \ldots, \vec{r}_p$ be vectors in $\mathbb{R}^n$, and let $Q$ be an $m \times n$ matrix. Write the matrix $\mat{Q\vec{r}_1 \ldots Q\vec{r}_p}$ as a \emph{product} of two matrices (neither of which is the identity matrix).
+    \question (Skip) Let $U$ be the $3\times2$ cost matrix described in Example 6 \ldots
+    \uplevel{Exercises 15-24 concern arbitrary matrices $A$, $B$, and $C$ for ecah the indicated sums and products are defined. Mark each statement True or False (\textbf{T}/\textbf{F}). Justify each answer.}
+    \question (\textbf{T}/\textbf{F}) If $A$ and $B$ are $2 \times 2$ with columns $\vec{a}_1$, $\vec{a}_2$, and $\vec{b}_1$, $\vec{b}_2$, respectively, then $AB = \mat{\vec{a}_1 \vec{b_1} & \vec{a}_2 \vec{b}_2}$.
+    \question (\textbf{T}/\textbf{F}) If $A$ and $B$ are $3 \times 3$ and $B = \mat{\vec{b}_1 & \vec{b}_2 & \vec{b}_3}$, then $AB = \mat{A\vec{b}_1 + A\vec{b}_2 + A\vec{b}_3}$.
+    \question (\textbf{T}/\textbf{F}) Each column of $AB$ is a linear combination of the columns of $B$ using weights from the corresponding column of $A$.
+    \question (\textbf{T}/\textbf{F}) The second row of $AB$ is the second row of $A$ multiplied on the right by $B$.
+    \question (\textbf{T}/\textbf{F}) $AB + AC = A\left(B+C\right)$.
+    \question (\textbf{T}/\textbf{F}) $A^T + B^T = \left(A+B\right)^T$.
+    \question (\textbf{T}/\textbf{F}) $\left(AB\right)C = \left(AC\right)$
+    \question (\textbf{T}/\textbf{F}) $\left(AB\right)^T = A^T B^T$
+    \question (\textbf{T}/\textbf{F}) The transpose of a product of matrices equals the product of their transposes in the same order.
+    \question (\textbf{T}/\textbf{F}) The transpose of a sum of matrices equals the sum of their transposes.
+    \begin{center}\rule{4in}{0.1mm}\end{center}
+    \question If $A = \mat{1 & -3 \\ -3 & 8}$ and $AB = \mat{-1 & 3 & -2 \\ 1 & -7 & 3}$, determine the first and second columns of $B$.
+    \question Suppose the first two columns, $\vec{b}_1$ and $\vec{b}_2$, of $B$ are equal. What can you say about the columnns of $AB$ (if $AB$ is defined)? Why?
+    \question Suppose the second column of $B$ is all zeros. WHat can you say about the second column of $AB$?
+    \question Suppose the last columnn of $B$ is all zeros, but $B$ itself has no colum of all zeros. What can you say about the columns of $A$?
+    \question Suppose that if the columns of $B$ are linearly independent, then so are the columns of $AB$.
+    \question Suppose $CA = I_n$ (the $n \times n$ identity matrix). Show that the equation $A\vec{x}=\vec{0}$ has only the trivial solution. Explain why $A$ cannot have more colummn than rows.
+    \question Suppose $AD = I_m$ (the $m \times m$ identity matrix). Show that for any $\vec{b}$ in $\mathbb{R}^m$, the equation $A\vec{x}=\vec{b}$ has a solution. Hint: Think about the equation $AD\vec{b}=\vec{b}$. Expalin why $A$ cannot have more rows than columns.
+    \question Suppose $A$ is an $m \times n$ matrix whose columns span $\mathbb{R}^3$. Explain how to construct matrices $C$ and $D$ such that $CA = I_n$ and $AD = I_m$. Prove that $m=n$ and $C=D$. Hint: Think about the product CAD.
+
+
+\end{questions} 
+\end{document}
