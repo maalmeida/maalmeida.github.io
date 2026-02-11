@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1770144305 "/Users/marcoalmeida/Documents/GitHub/maalmeida.github.io/Advanced Topics in Mathematics/Linear Algebra/2.2/2.2 Exercises.tex" "2.2 Exercises.pdf" "2.2 Exercises" 1770144306 0
-  "/Users/marcoalmeida/Documents/GitHub/maalmeida.github.io/Advanced Topics in Mathematics/Linear Algebra/2.2/2.2 Exercises.tex" 1770144305 6064 6190916e36aca1f21fff93f10a923e95 ""
+["pdflatex"] 1770376482 "/Users/marcoalmeida/Documents/GitHub/maalmeida.github.io/Advanced Topics in Mathematics/Linear Algebra/2.2/2.2 Exercises.tex" "2.2 Exercises.pdf" "2.2 Exercises" 1770376483 0
+  "/Users/marcoalmeida/Documents/GitHub/maalmeida.github.io/Advanced Topics in Mathematics/Linear Algebra/2.2/2.2 Exercises.tex" 1770376482 6080 0fbf359bb838a6fa5e3ea8a9ff6f94f5 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcbx1095.tfm" 1136768653 1536 0adca69c597a47fe7664bf81057bb53b ""
@@ -88,8 +88,8 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1680896342 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1680896332 7883464 93397beb92c0932719de6622eff537a4 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "2.2 Exercises.aux" 1770144306 5044 678163fbad15c03fb73622e2ae120e91 "pdflatex"
-  "2.2 Exercises.tex" 1770144305 6064 6190916e36aca1f21fff93f10a923e95 ""
+  "2.2 Exercises.aux" 1770376483 5044 678163fbad15c03fb73622e2ae120e91 "pdflatex"
+  "2.2 Exercises.tex" 1770376482 6080 0fbf359bb838a6fa5e3ea8a9ff6f94f5 ""
   (generated)
   "2.2 Exercises.aux"
   "2.2 Exercises.log"
