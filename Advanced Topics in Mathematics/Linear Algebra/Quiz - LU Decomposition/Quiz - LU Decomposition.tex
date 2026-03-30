@@ -1,0 +1,39 @@
+\documentclass[11pt,answers]{exam} %noanswers
+\usepackage{multicol}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+\usepackage{siunitx}
+\usepackage{mathtools}
+\usepackage{float}
+\usepackage[version=4]{mhchem}
+\newcommand{\qtty}[2]{\left(\qty{#1}{#2}\right)}
+\sisetup{display-per-mode = symbol }
+\sisetup{inter-unit-product = \ensuremath { { } \cdot { } } }
+\usepackage[letterpaper, total={7in, 10in}]{geometry}
+\usepackage{graphicx} % Required for inserting images
+\renewcommand{\epsilon}{\varepsilon}
+\renewcommand{\vec}[1]{\mathbf{#1}}
+\newcommand{\mat}[1]{\begin{bmatrix*}[r] #1 \end{bmatrix*}}
+\newcommand{\dett}[1]{\begin{vmatrix*}[r] #1 \end{vmatrix*}}
+\newcommand{\R}[1]{\mathbb{R}^{#1}}
+
+\begin{document}
+\flushleft
+Name:\ \makebox[4in]{\hrulefill} \hspace{1in} Date:\ \makebox[1in]{\hrulefill}
+\begin{center}
+    \textbf{LU Decomposition Quiz}
+\end{center}
+
+
+\begin{questions}
+    \question Find the $LU$ decomposition of $A$ where $A = \mat{1 & -2 & 3 & 1 \\ 2 & -3 & 7 & 6 \\ -2 & 7 & -6 & 1 \\ 3 & -2 & 7 & 3}$
+    \newpage
+    \question The matrix $A = \mat{1 & 2 & 0 & -1 \\ -1 & -1 & 3 & 3 \\ 2 & 3 & -4 & -3 \\ 0 & 3 & 8 & 8}$ has the $LU$ decomposition: \\
+    \begin{center}
+    $A = \mat{1 & 0 & 0 & 0 \\ -1 & 1 & 0 & 0 \\ 2 & -1 & 1 & 0 \\ 0 & 3 & 1 & 1} \mat{1 & 1 &  0 & -1 \\ 0 & 1 & 3 & 2 \\ 0 & 0 & -1 & 1 \\ 0 & 0 & 0 & 1}$
+    \end{center}
+    Use the given $LU$ decomposition to solve the equation $A\vec{x} = \vec{b}$ where $\vec{b} = \mat{-6 \\ 13 \\ -17 \\ 26}$
+\end{questions}
+\end{document}

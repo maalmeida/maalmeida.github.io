@@ -1,0 +1,110 @@
+\documentclass[11pt,answers]{exam} %noanswers
+\usepackage{multicol}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+\usepackage{siunitx}
+\usepackage{mathtools}
+\usepackage{float}
+\usepackage[version=4]{mhchem}
+\newcommand{\qtty}[2]{\left(\qty{#1}{#2}\right)}
+\sisetup{display-per-mode = symbol }
+\sisetup{inter-unit-product = \ensuremath { { } \cdot { } } }
+\usepackage[letterpaper, total={7in, 10in}]{geometry}
+\usepackage{graphicx} % Required for inserting images
+\renewcommand{\epsilon}{\varepsilon}
+\renewcommand{\vec}[1]{\mathbf{#1}}
+\newcommand{\mat}[1]{\begin{bmatrix*}[r] #1 \end{bmatrix*}}
+\newcommand{\dett}[1]{\begin{vmatrix*}[r] #1 \end{vmatrix*}}
+\newcommand{\R}[1]{\mathbb{R}^{#1}}
+
+\begin{document}
+\flushleft
+Name:\ \makebox[4in]{\hrulefill} \hspace{1in} Date:\ \makebox[1in]{\hrulefill}
+\begin{center}
+    \textbf{\S 3.3 Properties of Determinants}
+\end{center}
+
+
+\begin{questions}
+    \uplevel{Eaach equation in Exercises 1-4 illustrates a property of determinants. State the property.}
+    \question $\dett{0 & 5 & -2 \\ 1 & -3 & 6 \\ 4 & -1 & 8} = -\dett{1 & -3 & 6  \\ 0 & 5 & -2 \\ 4 & -1 & 8}$
+    \question $\dett{3 & -6 & 9 \\ 3 & 5 & -5 \\ 1 & 3 & 3} = 3 \dett{1 & -2 & 3 \\ 3 & 5 & -5 \\ 1 & 3 & 3}$
+    \question $\dett{1 & 2 & 2 \\ 0 & 3 & -4 \\2 & 7 & 4} = \dett{1 & 2 & 2 \\ 0 & 3 & -4 \\ 0 & 3 & 0}$
+    \question $\dett{1 & 3 & -4 \\ 2 & 0 & -3 \\ 3 & -5 & 2} = \dett{1 & 3 & -4 \\ 0 & -6 & 5 \\ 3 & -5 & 2}$
+    %=============
+    \begin{center}\rule{4in}{0.1mm}\end{center}
+    %=============
+    \uplevel{Find the determinants in Exercises 5-10 by using row reduction to echelon form.}
+    \question $\dett{1 & 5 & -4 \\ -1 & -4 & 5 \\ -2 & -8 & 7}$
+    \question $\dett{2 & 2 & -2 \\ 3 & 4 & -4 \\ 2 & -3 & -5}$
+    \question $\dett{1 & 3 & 0 & 2 \\ -2 & -5 & 7 & 4 \\3 & 5 & 2 & 1 \\ 1 & -1 & 2 & -3}$
+    \question $\dett{1 & 3 & 2 & -4 \\ 0 & 1 & 2 & -5 \\ 2 & 7 & 6 & -3 \\ -3 & -10 & -7 & 2}$
+    \question $\dett{1 & -1 & -3 & 0 \\ 0 & 1 & 5 & 4 \\ -1 & 0 & 5 & 3 \\ 3 & -3 & -2 & 3}$
+    \question $\dett{1 & 3 & -1 & 0 & -2 \\ 0 & 1 & -2 & -1 & -3 \\ -2 & -6 & 2 & 3 & 10 \\ 1 & 5 & -6 & 2 & -3 \\ 1 & 2 & -4 & 5 & -9}$
+
+    \uplevel{Combine the methods of row reduction and cofactor expansiont to compute the determinants in Exercises 11-14.}
+    $\left(\begin{array}{rrrr}
+1 & 2 & 0 & -1 \\
+-1 & -1 & 3 & 3 \\
+2 & 3 & -4 & -3 \\
+0 & 3 & 8 & 8
+\end{array}\right)$
+
+
+\pagebreak
+
+    
+
+    \question Skip
+    \question Skip
+    \question Skip
+    \question Skip
+    \uplevel{In Exercises 19-24, explore the effect of an elementary row operation on the determinant of a matrix. In each case, state the row operation and describe how it affects the determinant.}
+    \question $\mat{a & b \\ c & d}, \mat{c & d \\ a & b}$
+    \question $\mat{a & b \\ c & d}, \mat{a & b \\ kc & kd}$
+    \question $\mat{3 & 2 \\ 5 & 4}, \mat{3 & 2 \\ 5+3k & 4 + 2k}$
+    \question $\mat{a & b \\ c & d}, \mat{a+kc & b+kd \\ c & d}$
+    \question $\mat{a & b & c \\ 3 & 2 & 1 \\ 4 & 5 & 6}, \mat{3 & 2 & 1 \\ a & b & c \\ 4 & 5 & 6}$
+    \question $\mat{1 & 0 & 1 \\ -3 & 4 & -4 \\ 2 & -3 & 1}, \mat{k & 0 & k \\ -3 & 4 & -4 \\ 2 & -3 & 1}$
+
+    \uplevel{Computer the determinants of the elementary matrices given in Exercises 25-30.}
+    \question $\mat{1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & k & 1}$
+    \question $\mat{0 & 1 & 0 \\ 1 & 0 & 0 \\ 0 & 0 & 1}$
+    \question $\mat{1 & 0 & 0 \\ 0 & 1 & 0 \\ k & 0 & 1}$
+    \question $\mat{0 & 0 & 1 \\ 0 & 1 & 0 \\ 1 & 0 & 0}$
+    \question $\mat{1 & 0 & 0 \\ 0 & k & 0 \\ 0 & 0 & 1}$
+    \question $\mat{k& 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1}$
+
+    \uplevel{Use Exercises 25-30 to answer the questions in Exercsies 31 and 32. Give reasons for your answrs.}
+    \question What is the determinant of an elementary row replacement matrix?
+    \question What is the determinant of an elementary scaling matrix with $k$ on the diagonal?
+
+    \uplevel{In Exercises 33-36, verify that $\det{EA} = (\det{E})(\det{A})$ where $E$ is the elementary matrix shown and $A=\mat{a & b \\ c & d}$.}
+    \question $\mat{1 & k \\ 0 & 1}$
+    \question $\mat{1 & 0 \\ k & 1}$   
+    \question $\mat{0 & 1 \\ 1 & 0}$
+    \question $\mat{1 & 0 \\ 0 & k}$
+
+    \question Let $A = \mat{3 & 1 \\ 4 & 2}$. Write $5A$. Is $\det{5A} = 5\det{A}$? 
+    \question Let $A = \mat{a & b \\ c & d}$ and let $k$ be a scalar. Find a formula that relates $\det{kA}$ to $k$ and $\det{A}$.
+
+    \uplevel{In Exercises 39 through 42, $A$ is an $n\times n$ matrix. Mark each statement as True or False. Justify each answer.}
+    \question An $n \times n$ determinant is defined by determinants of $(n-1) \times (n-1)$ submatrices.
+    \question The $(i,j)$-cofactor of a matrix $A$ is the matrix $A_{ij}$ obtained by deleting from $A$ its $i$th row and $j$th column.
+    \question The cofactor expansion of $\det{A}$  down a column is equal to the cofactor expansion along a row.
+    \question The determinant of a triangular matrix is the sum of the entries on the main diagonal.
+    \question Let $\vec{u} = \mat{3 \\ 0}$ and $\vec{v} = \mat{1 \\ 2}$. Compute the area of the parallelogram determined by $\vec{u}, \vec{v}, \vec{u}+\vec{v}$, and $\vec{0}$, and compute the determinant of $\mat{\vec{u} & \vec{v}}$. How do they compare? Replace the first entry of $v$ by an arbitrary number $x$, and repeat the problem. Draw a picture to explain what you find.
+    \question Let $\vec{u} = \mat{a \\ b}$ and $\vec{v} = \mat{c \\ 0}$ where $a$, $b$, and $c$ are positive (for simplicity). Compute the area of the parallelogram determined by $\vec{u}, \vec{v}, \vec{u}+\vec{v}, \vec{0}$, and computer the determinants of the matrices $\mat{\vec{u} & \vec{v}}$ and $\mat{\vec{v} & \vec{u}}$. Draw a picture and explain what you find.
+    
+    \question Is it true that $\det{AB}=\det{A}\det{B}$? To find out, generate random $5\times 5$ matrices $A$ and $B$, and compute $\det{AB}-(\det{A}\det{B})$. Repeat the calculations for three other pairs of $n \times n$ matrices, for various values of $n$. Report your results.
+    \question Is is true that $\det{A+ B}=\det{A} + \det{B}$? Experiment with four pairs of random matrices as in the previous exercise and make a conjecture.
+    \question Construct a random $4 \times 4$ matrix $A$ with integer entries between $-9$ and $9$, and compare $\det{A}$ with $\det{A^T}$, $\det{(-A)}$, $\det{(2A)}$, and $\det{(10A)}$. Repeat with two other random $4 \times 4$ integer matrices, and make conjectures about how these determinants are related. (Refer to Exercise 44 in Section 2.1.). Then check your conjectures with several random $5\times 5$ and $6 \times 6$ integer matrices. Modify your conjectures, if necessary, and report your results.
+    \question Recall from the introductory section that the larger the determinant of $D^TD$, where $D$ is the design matrix, the better will be the accuracy of the calcualted weights for small light objects. Which of the following matrices corresponds to the best design for four weighings of four objects? Describe which of the objsects $s_1, s_2, s_3$, and $s_4$ you would put in the the left and right pans for each weighing corresponding to the best design matrix.
+    \begin{parts}
+        \part $D = \mat{1 & 1 & 1 & 1 \\ 1 & -1 & 1 & 1 \\ -1 & -1 & 1 & -1 \\ 1 & 1 & 1 & -1}$
+        \part $D = \mat{}$
+    \end{parts}
+\end{questions} 
+\end{document}
