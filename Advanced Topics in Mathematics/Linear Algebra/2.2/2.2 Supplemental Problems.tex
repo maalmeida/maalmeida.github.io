@@ -1,4 +1,4 @@
-\documentclass[11pt,noanswers]{exam} %noanswers
+\documentclass[11pt,answers]{exam} %noanswers
 \usepackage{multicol}
 \usepackage[usenames]{color} %used for font color
 \usepackage{amssymb} %maths
@@ -42,5 +42,9 @@ Name:\ \makebox[4in]{\hrulefill} \hspace{1in} Date:\ \makebox[1in]{\hrulefill}
     \end{solution}
 
     \question Let $D = \mat{-1 & 2 & 0 \\ 0 & -2 & 4 \\ 1 & 2 & k}$. Find $k$ such that $D$ is not invertible.
+    \begin{solution}
+        $\mat{D & I} \sim \mat{1 & 0 & -4 & -1 & -1 & 0 \\ 0 & 1 & -2 & 0 & -1/2 & 0 \\ 0 & 0 & k-8 & 1 & 2 & 1}$ \newline 
+        We cannot row reduce to the first three columns to $I_3$ if $k-8 = 0$ and so a value of $k=8$ maked $D$ non-invertible.
+    \end{solution}
 \end{questions}
 \end{document}
