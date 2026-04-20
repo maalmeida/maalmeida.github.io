@@ -1,0 +1,31 @@
+\documentclass[11pt,answers]{exam} %noanswers
+\usepackage{multicol}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+\usepackage{siunitx}
+\usepackage{mathtools}
+\usepackage{float}
+\usepackage[version=4]{mhchem}
+\newcommand{\qtty}[2]{\left(\qty{#1}{#2}\right)}
+\sisetup{display-per-mode = symbol }
+\sisetup{inter-unit-product = \ensuremath { { } \cdot { } } }
+\usepackage[letterpaper, total={7in, 10in}]{geometry}
+\usepackage{graphicx} % Required for inserting images
+
+\newtheorem{theorem}{Theorem}
+\renewcommand{\epsilon}{\varepsilon}
+\renewcommand{\vec}[1]{\mathbf{#1}}
+\newcommand{\mat}[1]{\begin{bmatrix*}[r] #1 \end{bmatrix*}}
+\newcommand{\dett}[1]{\begin{vmatrix*}[r] #1 \end{vmatrix*}}
+\newcommand{\R}[1]{\mathbb{R}^{#1}}
+
+\begin{document}
+\flushleft
+
+\section{Chapter 3: Determinants}
+\begin{theorem}
+The determinant of an $n \times n$ matrix $A$ can be computer by a cofactor expansion
+\end{theorem}
+\end{document}

@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.7)  31 MAR 2026 13:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.7)  7 APR 2026 13:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/marcoalmeida/Documents/GitHub/maalmeida.github.io/Advanced Topics in Mathematics/Linear Algebra/3.2/3.2 Exercises.tex"
-(/Users/marcoalmeida/Documents/GitHub/maalmeida.github.io/Advanced Topics in Mathematics/Linear Algebra/3.2/3.2 Exercises.tex
+**"/Users/marcoalmeida/Documents/GitHub/maalmeida.github.io/Advanced Topics in Mathematics/Linear Algebra/Theorems/Theorems.tex"
+(/Users/marcoalmeida/Documents/GitHub/maalmeida.github.io/Advanced Topics in Mathematics/Linear Algebra/Theorems/Theorems.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22> (/usr/local/texlive/2023/texmf-dist/tex/latex/exam/exam.cls
 Document Class: exam 2021/02/26 Version 2.7 by Philip Hirschhorn
@@ -412,52 +412,37 @@ Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 \Gin@req@height=\dimen191
 \Gin@req@width=\dimen192
 )
-Package translations Info: No language package found. I am going to use `english' as default language. on input line 22.
- (./3.2 Exercises.aux
+\c@theorem=\count349
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 24.
+ (./Theorems.aux)
+\openout1 = `Theorems.aux'.
 
-LaTeX Warning: Label `part@44@1' multiply defined.
-
-
-LaTeX Warning: Label `part@44@2' multiply defined.
-
-
-LaTeX Warning: Label `part@44@3' multiply defined.
-
-
-LaTeX Warning: Label `part@44@4' multiply defined.
-
-
-LaTeX Warning: Label `part@44@5' multiply defined.
-
-)
-\openout1 = `"3.2 Exercises.aux"'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
  (/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count349
+\scratchcounter=\count350
 \scratchdimen=\dimen193
 \scratchbox=\box113
-\nofMPsegments=\count350
-\nofMParguments=\count351
+\nofMPsegments=\count351
+\nofMParguments=\count352
 \everyMPshowfont=\toks34
-\MPscratchCnt=\count352
+\MPscratchCnt=\count353
 \MPscratchDim=\dimen194
-\MPnumerator=\count353
-\makeMPintoPDFobject=\count354
+\MPnumerator=\count354
+\makeMPintoPDFobject=\count355
 \everyMPtoPDFconversion=\toks35
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -467,9 +452,9 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 )) (/usr/local/texlive/2023/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 22.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 24.
 
-Package chemgreek Info: Activating mapping `default' on line 22.
+Package chemgreek Info: Activating mapping `default' on line 24.
 
 
 *geometry* driver: auto-detecting
@@ -506,35 +491,31 @@ Package chemgreek Info: Activating mapping `default' on line 22.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 32.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 29.
 (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 32.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 29.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [2] [3] [4] [5] [6] [7]
-This exam contains 79 questions with 16 parts, 0 subparts, and 0 subsubparts.
-(./3.2 Exercises.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+This exam contains 0 questions with 0 parts, 0 subparts, and 0 subsubparts.
+(./Theorems.aux) ) 
 Here is how much of TeX's memory you used:
- 10764 strings out of 476025
- 231358 string characters out of 5790018
- 1879388 words of memory out of 5000000
- 31125 multiletter control sequences out of 15000+600000
- 518209 words of font info for 54 fonts, out of 8000000 for 9000
+ 10327 strings out of 476025
+ 224326 string characters out of 5790018
+ 1851388 words of memory out of 5000000
+ 30689 multiletter control sequences out of 15000+600000
+ 518194 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 73i,10n,77p,674b,524s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb>
-Output written on "3.2 Exercises.pdf" (7 pages, 121472 bytes).
+ 73i,10n,77p,500b,524s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on Theorems.pdf (1 page, 52483 bytes).
 PDF statistics:
- 74 PDF objects out of 1000 (max. 8388607)
- 46 compressed objects within 1 object stream
+ 33 PDF objects out of 1000 (max. 8388607)
+ 19 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,55 @@
+\documentclass[11pt,answers]{exam} %noanswers
+\usepackage{multicol}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+\usepackage{siunitx}
+\usepackage{mathtools}
+\usepackage{float}
+\usepackage[version=4]{mhchem}
+\newcommand{\qtty}[2]{\left(\qty{#1}{#2}\right)}
+\sisetup{display-per-mode = symbol }
+\sisetup{inter-unit-product = \ensuremath { { } \cdot { } } }
+\usepackage[letterpaper, total={7in, 10in}]{geometry}
+\usepackage{graphicx} % Required for inserting images
+\renewcommand{\epsilon}{\varepsilon}
+\renewcommand{\vec}[1]{\mathbf{#1}}
+\newcommand{\mat}[1]{\begin{bmatrix*}[r] #1 \end{bmatrix*}}
+\newcommand{\dett}[1]{\begin{vmatrix*}[r] #1 \end{vmatrix*}}
+\newcommand{\R}[1]{\mathbb{R}^{#1}}
+
+\begin{document}
+\flushleft
+Name:\ \makebox[4in]{\hrulefill} \hspace{1in} Date:\ \makebox[1in]{\hrulefill}
+\begin{center}
+    \textbf{Intro to Determinants and Properties of Determinants Quiz}
+\end{center}
+
+\textbf{Instructions:} Show enough work that makes your processes easily understood. Box in any final answers. You may use a calculator for ny arithmetic but not use any matrix-related functions.
+\begin{questions}
+    \question Compute $\det{(A)}$ given $A = \mat{3 & 5 \\ 4 & 8}$.
+    \vspace{2 cm}
+    \question Consider the matrix $B = \mat{4 & 1 & -2 \\ -1 & 2 & 3 \\ 0 & 1 & 2}$. 
+    \begin{parts}
+        \part Compute the $C_{12}$ cofactor of $B$.
+        \vspace{3cm}
+        \part Compute the $C_{31}$ cofactor of $B$.
+        \vspace{3 cm}
+    \end{parts}
+    
+    \question Compute the determinant $M$ of the matrix by cofactor expansion where $M = \mat{-4 & 2 & -2 & 5 \\ 0 & -1 & 2 & -2 \\ 0 & 3 & 0 & 0 \\ 0 & -3 & 1 & 4}$.
+    \newpage
+    \question Compute the determinant of  $N$ where $N = \mat{4 & 1 & 2 \\ -4 & -1 & -6 \\ 8 & 5 & 3}$ using row reduction to echelon form and properties of determinants.
+    \vspace{14cm}
+    \question Let $\dett{a & b & c \\ d & e & f \\ g & h & i} = 4$. Evaluate the following. 
+    \begin{parts}
+    \part $\dett{a & b & c \\ 3d & 3e & 3f \\ g & h & i}$
+    \part $\dett{d & e & f \\ g & h & i \\ a & b & c}$
+    \part $\dett{a & b & c \\ d & e & f \\ g+a & h+b & i+c}$
+    \part $\dett{a & b & c \\ d & e & f \\ 3g+a & 3h+b & 3i+c}$
+    \end{parts}
+    
+    %\question Consider the matrix $B = \mat{3 & 0 & 1 \\ -2 & 4 & 2 \\  1 & -1 & 1}$. Compute the 
+\end{questions}
+\end{document}
